@@ -18,8 +18,7 @@ $router->get('/', function () use ($router) {
 $router->post('/login', 'AuthController@login');
 $router->get('/penelitian', 'PenelitianController@show');
 
-$router->get('/info/download/{id}', 'InfoController@download');
-$router->post('/info/download/{id}', 'InfoController@download');
-$router->put('/info/update/{id}', 'InfoController@update');
+$router->post('/info/update', 'InfoController@update');
 $router->post('/info/save', 'InfoController@save');
 $router->get('/info', 'InfoController@info');
+$router->post('/info/delete', 'InfoController@delete');
